@@ -28,8 +28,7 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-include(/home/wang/software/opencv/opencv-3.2.0.bin/OpenCVConfig.cmake)
-
+find_package(OpenCV REQUIRED)
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 
